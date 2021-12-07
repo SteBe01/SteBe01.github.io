@@ -11,9 +11,34 @@
             <li id="li1"><a href="../index.html">Home</a></li>
             <li id="li1"><a href="pag1.html">Natale</a></li>
         </ul>
-       
+
         
-        <iframe src="../script/script.html" frameborder="0" height="500px" width="100%"></iframe>
+        <!-- <iframe src="../script/script.html" frameborder="0" height="500px" width="100%"></iframe> -->
+
+
+        <br><br>
+
+        <div id="script1">
+            <script type="text/javascript">
+
+                today = new Date();
+                BigDay = new Date("December 25, 2021");
+                
+                msPerDay = 24 * 60 * 60 * 1000 ;
+                
+                timeLeft = (BigDay.getTime() - today.getTime());
+                e_daysLeft = timeLeft / msPerDay;
+                daysLeft = Math.floor(e_daysLeft);
+                e_hrsLeft = (e_daysLeft - daysLeft)*24;
+                hrsLeft = Math.floor(e_hrsLeft);
+                minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+                
+                document.write("Mancano solo<BR> <H4> " + daysLeft + " giorni " + hrsLeft +" ore e " + minsLeft + " minuti </H4> a Natale<P>");
+            </script>
+        </div>
+
+        <br><br>
+        
 
         
         <footer id="footerbottom">
