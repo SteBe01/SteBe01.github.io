@@ -2,6 +2,17 @@ html, body
 {
     min-height: 100%;
     margin: 0%;
+    margin-bottom: 25%
+}
+
+.noselect
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #ul1
@@ -13,12 +24,10 @@ html, body
     overflow: hidden;
     background-color: #333333;
 }
-  
 #li1
 {
     float: left;
 }
-  
 #li1 a
 {
     display: block;
@@ -27,7 +36,6 @@ html, body
     padding: 16px;
     text-decoration: none;
 }
-
 #li1 a:hover
 {
     background-color: #111111;
@@ -42,16 +50,6 @@ html, body
     font-size: 100%;
 }
 
-#footerbottom h5
-{
-    color: white;
-    padding: 20px;
-    background-color: black;
-    text-align: center;
-    font-size: 150%;
-    margin-bottom: 0%;
-}
-
 #script1
 {
     font-size: 200%;
@@ -62,25 +60,60 @@ html, body
     position: fixed center;
 }
 
-.noselect
+.nav1
 {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    display: inline;
 }
+.nav_container
+{
+    height: 100%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    background-color: mediumseagreen;
+}
+.nav_image
+{
+    position: relative;
+    float: top;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav_image img
+{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.nav_text
+{
+    text-align: center;
+    position: relative;
+    float: bottom;
+    margin-top: 10px;
+}
+
+#footerbottom
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0%;
+}
+#footerbottom h5
+{
+    color: white;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 0%;
+}
+
 
 
 @media only screen and (min-width: 1100px)
 {
-    html, body
-    {
-        min-height: 100%;
-        margin: 0%;
-    }
-
     #ul1
     {
         font-size: 100%;
@@ -90,44 +123,10 @@ html, body
         overflow: hidden;
         background-color: #333333;
     }
-  
-    #li1
-    {
-        float: left;
-    }
-  
-    #li1 a
-    {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-    }
-
     #li1 a:hover
     {
         background-color: #111111;
         cursor: pointer;
-    }
-
-    .lorem1
-    {
-        margin-top: 60px;
-        margin-right: 20px;
-        margin-left: 20px;
-        text-align: justify;
-        font-size: 100%;
-    }
-
-    #footerbottom h5
-    {
-        color: white;
-        padding: 20px;
-        background-color: black;
-        text-align: left;
-        font-size: 100%;
-        margin-bottom: 0%;
     }
 
     #script1
@@ -140,13 +139,30 @@ html, body
         position: fixed center;
     }
 
-    .noselect
+    .nav_container
     {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+        width: 25%;
+        height: 100%;
+        position: relative;
+        float: left;
+        margin-top: 5%;
+    }
+    .nav_image
+    {
+        position: relative;
+        float: top;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footerbottom h5
+    {
+        color: white;
+        padding: 20px;
+        background-color: black;
+        text-align: left;
+        font-size: 100%;
+        margin-bottom: 0%;
     }
 }
