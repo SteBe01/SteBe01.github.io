@@ -92,6 +92,16 @@ html, body
     margin-top: 10px;
 }
 
+#videoYT
+{
+    text-align: center;
+}
+#videoYT iframe
+{
+    width: 352px;
+    height: 198px;
+}
+
 #footerbottom
 {
     position: fixed;
@@ -157,6 +167,16 @@ html, body
         width: 50%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #videoYT
+    {
+        margin-bottom: 10%;
+    }
+    #videoYT iframe
+    {
+        width: 880px;
+        height: 495px;
     }
 
     #footerbottom h5
