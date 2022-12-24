@@ -8,8 +8,8 @@
     </head>
     <body class="noselect">
         <ul id="ul1">
-            <li id="li1"><a href="../index">Home</a></li>
-            <li id="li1"><a href="pag1">Natale</a></li>
+            <li id="li1"><a href="../index.html">Home</a></li>
+            <li id="li1"><a href="pag1.html">Natale</a></li>
         </ul>
 
         
@@ -19,7 +19,11 @@
             <script type="text/javascript">
 
                 today = new Date();
-                BigDay = new Date("December 25, 2022");
+                BigDay = new Date("December 25," + today.getFullYear());
+
+                if (BigDay.getTime() - today.getTime()<0) {
+                    BigDay = new Date("December 25," + (today.getFullYear()+1));
+                }
                 
                 msPerDay = 24 * 60 * 60 * 1000 ;
                 
